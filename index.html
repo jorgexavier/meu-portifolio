@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <!-- Configurações básicas do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <!-- Importação do Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importação da fonte Inter do Google Fonts para uma tipografia moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Importação do Font Awesome para os ícones de redes sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Estilo personalizado para usar a fonte Inter e aplicar um fundo cinzento -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #0092FF;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Menu de Navegação -->
+    <nav class="sticky top-0 z-50 bg-indigo-700 shadow-md">
+        <div class="container mx-auto px-4 md:px-8 py-3 flex items-center justify-center space-x-6 sm:space-x-8">
+            <a href="#sobre" class="text-white hover:text-blue-200 transition-colors duration-300 font-medium">Sobre</a>
+            <a href="#habilidades" class="text-white hover:text-blue-200 transition-colors duration-300 font-medium">Habilidades</a>
+            <a href="#projetos" class="text-white hover:text-blue-200 transition-colors duration-300 font-medium">Projetos</a>
+            <a href="#tecnologias" class="text-white hover:text-blue-200 transition-colors duration-300 font-medium">Tecnologias</a>
+            <a href="#contacto" class="text-white hover:text-blue-200 transition-colors duration-300 font-medium">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Seção de Cabeçalho do Portfólio -->
+    <header class="bg-blue-100 shadow-sm py-12 px-4 md:px-8">
+        <div class="container mx-auto flex flex-col items-center text-center">
+            
+            <!-- Contenedor para a foto de perfil e o novo fundo -->
+            <div class="w-40 h-40 rounded-full bg-blue-200 ring-4 ring-white ring-offset-4 ring-offset-blue-100 mb-6 flex items-center justify-center">
+                <img class="w-36 h-36 rounded-full object-cover" 
+                     src="img/jo.jpg" 
+                     alt="Foto de perfil">
+            </div>
+            
+            <!-- Título e subtítulo do portfólio -->
+            <h1 class="text-4xl sm:text-5xl font-bold text-indigo-700 mb-2">Jorge Xavier</h1>
+            <p class="text-xl sm:text-2xl font-medium text-gray-500">Desenvolvedor de Dados & Analista de BI</p>
+            
+            <!-- Links para redes sociais -->
+            <div class="flex space-x-4 mt-4 text-gray-600">
+                <!-- Link para o LinkedIn -->
+                <a href="https://www.linkedin.com/in/jorge-xavier-41450119a/" class="hover:text-blue-600 transition-colors duration-300" 
+                   aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <!-- Link para o GitHub -->
+                <a href="https://github.com/jorgexavier" class="hover:text-blue-600 transition-colors duration-300" 
+                   aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github-square fa-2x"></i>
+                </a>
+                <!-- Adicionar mais links conforme necessário, ex: Twitter, Portfólio, etc. -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Introdução e Sobre Mim -->
+    <section id="sobre" class="py-16 px-4 md:px-8">
+        <div class="container mx-auto max-w-3xl bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Sobre Mim</h2>
+            <p class="text-lg text-gray-600 text-center">
+                Olá! Sou um profissional apaixonado por dados e tecnologia, especializado em transformar dados complexos em informações claras e acionáveis. Com experiência em ferramentas de Business Intelligence e programação, busco sempre as melhores soluções para impulsionar o crescimento e a eficiência.
+            </p>
+            <p class="mt-4 text-gray-600 text-center">
+                Aqui você poderá conhecer um pouco mais sobre minhas habilidades e os projetos que desenvolvi. Fique à vontade para explorar e entrar em contacto!
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção de Habilidades -->
+    <section id="habilidades" class="bg-blue-50 py-16 px-4 md:px-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-10">Minhas Habilidades</h2>
+            
+            <!-- Grid para exibir as habilidades em cartões -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Cartão de Habilidade 1: Análise de Dados -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <div class="text-5xl text-blue-600 mb-4">📊</div>
+                    <h3 class="text-xl font-semibold mb-2">Análise de Dados</h3>
+                    <p class="text-gray-600">
+                        Proficiência em identificar padrões e tendências, utilizando ferramentas estatísticas para extrair insights valiosos.
+                    </p>
+                </div>
+
+                <!-- Cartão de Habilidade 2: Business Intelligence -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <div class="text-5xl text-blue-600 mb-4">📈</div>
+                    <h3 class="text-xl font-semibold mb-2">Business Intelligence</h3>
+                    <p class="text-gray-600">
+                        Criação de dashboards interativos e relatórios detalhados com ferramentas como Power BI e Tableau.
+                    </p>
+                </div>
+                
+                <!-- Cartão de Habilidade 3: Programação e SQL -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <div class="text-5xl text-blue-600 mb-4">💻</div>
+                    <h3 class="text-xl font-semibold mb-2">Programação e SQL</h3>
+                    <p class="text-gray-600">
+                        Experiência em Python e SQL para manipulação de dados, automação e otimização de consultas.
+                    </p>
+                </div>
+
+                <!-- Cartão de Habilidade 4: Visualização de Dados -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <div class="text-5xl text-blue-600 mb-4">🎨</div>
+                    <h3 class="text-xl font-semibold mb-2">Visualização de Dados</h3>
+                    <p class="text-gray-600">
+                        Habilidade em criar visualizações claras e impactantes para comunicar descobertas de forma eficaz.
+                    </p>
+                </div>
+                
+                <!-- Cartão de Habilidade 5: Resolução de Problemas -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <div class="text-5xl text-blue-600 mb-4">🧠</div>
+                    <h3 class="text-xl font-semibold mb-2">Resolução de Problemas</h3>
+                    <p class="text-gray-600">
+                        Capacidade de analisar desafios complexos e desenvolver soluções lógicas e eficientes.
+                    </p>
+                </div>
+
+                <!-- Cartão de Habilidade 6: Comunicação -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <div class="text-5xl text-blue-600 mb-4">🗣️</div>
+                    <h3 class="text-xl font-semibold mb-2">Comunicação</h3>
+                    <p class="text-gray-600">
+                        Apresentação de resultados e insights de forma clara e objetiva para diferentes audiências.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projetos" class="py-16 px-4 md:px-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-10">Meus Projetos</h2>
+            
+            <!-- Grid para exibir os projetos -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Cartão de Projeto 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img class="w-full h-48 object-cover" 
+                         src="img/hr.png" 
+                         alt="Imagem do Projeto 1">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Dashboard People Analytics</h3>
+                        <p class="text-gray-600 mb-4">
+                            Criação de um dashboard interativo no Power BI para monitorizar o desempenho de vendas em tempo real.
+                        </p>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiZTlmZDIwODItY2M0ZS00OGRlLTlmOTUtODFmYTQ0ZGE2Mzg4IiwidCI6IjJiMDAzMDE5LTdiYjUtNDkwNC1hODY3LTU2NTFhYmJkMzU4ZSIsImMiOjh9" class="inline-block bg-[#2196f3] text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+                            Ver Projeto
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cartão de Projeto 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img class="w-full h-48 object-cover" 
+                         src="img/estoque.png" 
+                         alt="imagem Projecto 2">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Dashboard Gestão de Estoque</h3>
+                        <p class="text-gray-600 mb-4">
+                            Estudo do comportamento do consumidor utilizando Python e Pandas para segmentação e insights.
+                        </p>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiYTMzOWJmNjgtNGIwNC00NDgxLThkN2MtMDFmMmY2NjU1ZDFkIiwidCI6IjJiMDAzMDE5LTdiYjUtNDkwNC1hODY3LTU2NTFhYmJkMzU4ZSIsImMiOjh9" class="inline-block bg-[#2196f3] text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+                            Ver Projeto
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cartão de Projeto 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img class="w-full h-48 object-cover" 
+                         src="img/producao.png" 
+                         alt="Imagem do Projeto 3">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Dashboard Produção </h3>
+                        <p class="text-gray-600 mb-4">
+                            Criação de scripts em Python para automatizar a extração e o envio de relatórios diários.
+                        </p>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiMmEwYjkxNzItOGY1NS00ZTI1LWI4OTUtNWI4M2VlNzY1Y2NhIiwidCI6IjJiMDAzMDE5LTdiYjUtNDkwNC1hODY3LTU2NTFhYmJkMzU4ZSIsImMiOjh9" class="inline-block bg-[#2196f3] text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+                            Ver Projeto
+                        </a>
+                    </div>
+                </div>
+
+                 <!-- Cartão de Projeto 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img class="w-full h-48 object-cover" 
+                         src="img/sl.png" 
+                         alt="Imagem do Projeto 3">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Dashboard Produção </h3>
+                        <p class="text-gray-600 mb-4">
+                            Criação de scripts em Python para automatizar a extração e o envio de relatórios diários.
+                        </p>
+                        <a href="https://app.powerbi.com/reportEmbed?reportId=f9e730f0-d226-4da8-9ca2-9804ef500104&autoAuth=true&ctid=2b003019-7bb5-4904-a867-5651abbd358e" class="inline-block bg-[#2196f3] text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+                            Ver Projeto
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seção de Tecnologias & Ferramentas (agora como uma tabela) -->
+    <section id="tecnologias" class="bg-gray-100 py-16 px-4 md:px-8">
+        <div class="container mx-auto max-w-3xl bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Tecnologias & Ferramentas</h2>
+            
+            <!-- Tabela para exibir as tecnologias -->
+            <div class="overflow-x-auto">
+                <table class="w-full text-left table-auto">
+                    <thead>
+                        <tr class="border-b-2 border-gray-200">
+                            <th class="px-4 py-3 text-sm font-semibold text-gray-600 uppercase tracking-wider">Tecnologia</th>
+                            <th class="px-4 py-3 text-sm font-semibold text-gray-600 uppercase tracking-wider">Nível de Experiência</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Linha para Python -->
+                        <tr class="border-b border-gray-100 transition-colors hover:bg-gray-50">
+                            <td class="px-4 py-4 text-gray-800 font-medium">Python</td>
+                            <td class="px-4 py-4 text-gray-600">Profissional (4+ anos)</td>
+                        </tr>
+                        <!-- Linha para SQL -->
+                        <tr class="border-b border-gray-100 transition-colors hover:bg-gray-50">
+                            <td class="px-4 py-4 text-gray-800 font-medium">SQL</td>
+                            <td class="px-4 py-4 text-gray-600">Profissional (5+ anos)</td>
+                        </tr>
+                        <!-- Linha para Power BI -->
+                        <tr class="border-b border-gray-100 transition-colors hover:bg-gray-50">
+                            <td class="px-4 py-4 text-gray-800 font-medium">Power BI</td>
+                            <td class="px-4 py-4 text-gray-600">Profissional (3+ anos)</td>
+                        </tr>
+                        <!-- Linha para Tableau -->
+                        <tr class="border-b border-gray-100 transition-colors hover:bg-gray-50">
+                            <td class="px-4 py-4 text-gray-800 font-medium">Tableau</td>
+                            <td class="px-4 py-4 text-gray-600">Intermédio (1-2 anos)</td>
+                        </tr>
+                        <!-- Linha para Excel -->
+                        <tr class="border-b border-gray-100 transition-colors hover:bg-gray-50">
+                            <td class="px-4 py-4 text-gray-800 font-medium">Excel</td>
+                            <td class="px-4 py-4 text-gray-600">Profissional (5+ anos)</td>
+                        </tr>
+                        <!-- Linha para Google Analytics -->
+                        <tr class="transition-colors hover:bg-gray-50">
+                            <td class="px-4 py-4 text-gray-800 font-medium">Google Analytics</td>
+                            <td class="px-4 py-4 text-gray-600">Intermédio (2 anos)</td>
+                        </tr>
+                        <tr class="transition-colors hover:bg-gray-50">
+                            <td class="px-4 py-4 text-gray-800 font-medium">Insomnia</td>
+                            <td class="px-4 py-4 text-gray-600">Intermédio (2 anos)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contacto -->
+    <section id="contacto" class="bg-gray-100 py-16 px-4 md:px-8">
+        <div class="container mx-auto max-w-2xl bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Entre em Contacto</h2>
+            <p class="text-lg text-gray-600 mb-8 text-center">
+                Tem alguma pergunta ou quer falar sobre um projeto? Envie-me uma mensagem.
+            </p>
+            
+            <!-- Formulário de Contacto com estilos do Tailwind -->
+            <form class="space-y-6">
+                <div>
+                    <label for="nome" class="block text-sm font-medium text-gray-700">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="O seu nome" 
+                           class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 transition-colors px-4 py-2">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" placeholder="O seu email" 
+                           class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 transition-colors px-4 py-2">
+                </div>
+                <div>
+                    <label for="mensagem" class="block text-sm font-medium text-gray-700">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="A sua mensagem..." 
+                              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 transition-colors px-4 py-2"></textarea>
+                </div>
+                <div>
+                    <button type="submit" 
+                            class="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-lg text-white bg-[#2196f3] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white text-center py-6 px-4">
+        <p>&copy; 2025 - Jorge Xavier. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
